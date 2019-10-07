@@ -2,12 +2,12 @@
 def consolidate_cart(cart)
   # code here
   final_hash = {}
-  cart.each { |element_hash| 
+  cart.each do |element_hash| 
   element_name = element_hash.keys[0]
   element_stats = element_hash.values[0]
    
   if final_hash.has_key?(element_name) 
-    final_hash[element_name] += 1 
+    final_hash[element_name][:count] += 1 
     
   else
     final_hash[element_name] = {
@@ -16,7 +16,7 @@ def consolidate_cart(cart)
       clearance: element_stats[:clearance]
     }
     end
-  }
+  end
   final_hash
 end
 
