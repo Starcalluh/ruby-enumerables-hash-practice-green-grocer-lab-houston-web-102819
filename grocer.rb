@@ -10,7 +10,7 @@ def consolidate_cart(cart)
     element_stats[:count] += 1 
     
   else
-     binding.pry
+    binding.pry
     end
   }
 end
