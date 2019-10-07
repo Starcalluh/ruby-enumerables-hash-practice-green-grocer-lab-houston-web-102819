@@ -15,6 +15,7 @@ def consolidate_cart(cart)
     binding.pry
     end
   }
+  final_hash
 end
 
 def apply_coupons(cart, coupons)
